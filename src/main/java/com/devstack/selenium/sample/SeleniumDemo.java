@@ -12,13 +12,16 @@ public class SeleniumDemo {
         Thread.sleep(3000);
 //        driver.navigate().to("https://www.google.com");
 //        Thread.sleep(3000);
+
         driver.findElement(By.id("gh-ac")).click();
         driver.findElement(By.id("gh-ac")).clear();
         driver.findElement(By.id("gh-ac")).sendKeys("iphone");
         Thread.sleep(3000);
+
         Select selectDropDown = new Select(driver.findElement(By.id("gh-cat")));
         selectDropDown.selectByVisibleText("Cell Phones & Accessories");
         Thread.sleep(3000);
+
         driver.findElement(By.id("gh-search-btn")).click();
         Thread.sleep(3000);
     }
