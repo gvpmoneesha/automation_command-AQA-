@@ -15,8 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class WaitCommandsTest {
     public static void main(String[] args) {
         //implicitWaitExample();
-        explicitWaitExample();
-        //fluentWaitExample();
+        //explicitWaitExample();
+        fluentWaitExample();
     }
 
     public static void implicitWaitExample() {
@@ -34,6 +34,7 @@ public class WaitCommandsTest {
         driver.get("https://demoqa.com/dynamic-properties");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("enableAfter")));
+        assert element != null;
         element.click();
         System.out.println("Clicked on the button successfully");
     }
