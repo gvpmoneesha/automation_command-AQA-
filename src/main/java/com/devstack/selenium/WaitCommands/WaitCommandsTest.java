@@ -14,8 +14,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WaitCommandsTest {
     public static void main(String[] args) {
-        implicitWaitExample();
-        // explicitWaitExample();
+        //implicitWaitExample();
+        explicitWaitExample();
         //fluentWaitExample();
     }
 
