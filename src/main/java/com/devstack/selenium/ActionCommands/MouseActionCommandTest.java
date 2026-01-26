@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class MouseActionCommandTest {
     public static void main(String[] args) throws InterruptedException {
         // contextClickExample();
-        doubleClickExample();
+        // doubleClickExample();
         // sliderActionExample();
         //mouseHoverExample();
     }
