@@ -14,7 +14,7 @@ public class MouseActionCommandTest {
         // contextClickExample();
         // doubleClickExample();
         // sliderActionExample();
-        //mouseHoverExample();
+           mouseHoverExample();
     }
 
     public static void contextClickExample() throws InterruptedException {
